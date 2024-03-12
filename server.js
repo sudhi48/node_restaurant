@@ -29,7 +29,7 @@ app.get('/',function(req, res) {
 })
 
 
-app.use('/person',localAuthMiddleware,personRoutes);
+app.use('/person',personRoutes);
 app.use('/menu',menuItemRoutes);
 
 
